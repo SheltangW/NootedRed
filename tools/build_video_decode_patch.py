@@ -95,8 +95,10 @@ def identify_payload(native, device_id, va_family):
             if not branch:
                 raise ValueError("无法核实的识别分支")
             result += f"{branch[1]} L{branch[2]}\n"
-        elif re.match(r"movl\s+\$0x[0-9a-f]+, %ebx", instruction):
-            value = int(re.search(r"\$0x([0-9a-f]+)", instruction)[1], 16)
+        elif re.match(r"movl\s+\$(?:0x[0-9a-f]+|\d+), %ebx", instruction):
+            # llvm-objdump 的版本不同会打印十进制或十六进制立即数；两者都改写成
+            # push/pop，让小立即数使用更短的 push imm8 编码，为注入代码留出空间。
+            value = int(re.search(r"\$(0x[0-9a-f]+|\d+)", instruction)[1], 0)
             result += f"pushq ${value}\npopq %rbx\n"
         else:
             result += ".byte " + ",".join(hex(v) for v in raw) + "\n"

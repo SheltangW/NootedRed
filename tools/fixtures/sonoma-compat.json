@@ -40,7 +40,7 @@
     "__ZN17VAAcceleratorInfo8identifyEjj": {
       "address": 140716067640208,
       "length": 448,
-      "sha256": "4f6065eba240bc918704526b0b73966ac0392d2c94ac9e79a5c91c10a8e168e0"
+      "sha256": "8be19965bd9ea3cdf1188fec8391ad1f46fea03989d1f9717cedd54cadd1712a"
     },
     "__ZN18VAAddrLibInterface4initEP11VAIOConnectP13sHardwareInfo": {
       "address": 140716067646734,
@@ -129,9 +129,9 @@
     ]
   },
   "gva": {
-    "address": 140711721315080,
+    "address": 140711721315480,
     "size": 1580,
-    "sha256": "66fc0fe8bf89dcf53e23bbae27ce69477a73218da7eb191da4c6c44b0c552dc5",
+    "sha256": "4f3d5aa1f038cd9686265266a5885b5835e3a509351613d7219a8b7cd5ac6c95",
     "offset": 564,
     "branch": "0f8499000000"
   },
