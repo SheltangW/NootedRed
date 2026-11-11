@@ -3,7 +3,7 @@
     "-[GFX9_MtlRenderPipelineState initWithDevice:pipelineStateDescriptor:vertexVariant:fragmentVariant:]": {
       "address": 140716069404628,
       "size": 9308,
-      "sha256": "f9ebf68d09b4bc8af5cc59fd231d48cc87f3bff572992d4fa06441d1d1d5335f"
+      "sha256": "427cb9b02a20d0c80e2bcdb1b56c5ccbe28fbee5301698ff0408be2719fb4844"
     },
     "-[GFX9AMD_MtlCmdQueue submitCommandBuffers:count:]": {
       "address": 140716069478928,
@@ -13,7 +13,7 @@
     "__ZL33amdMtl_GFX9_AllocateScratchBufferP28GFX9_MtlComputePipelineStatej": {
       "address": 140716069666381,
       "size": 456,
-      "sha256": "11a89ab0afc8d991e837d59a25145a49cff1b26df8dd6fd477f9f95f4c9e2ac6"
+      "sha256": "fada14ceeeb7aa265daf93e47066d4b447f39c0730538f2045a7f2d3e824c801"
     },
     "__Z29amdMtl_OverrideDeviceSettingsP18AMD_DeviceSettings": {
       "address": 140716070160973,
@@ -113,9 +113,9 @@
       "sha256": "4e084ad484bb7fc2bdf954aef90bb9476eb8a2b2a540c66b4211a7a4d699c6ef"
     }
   },
-  "uuid": "4c1441fd8a543dc2863d49110b946a25",
-  "version": "14.8.9",
-  "build": "23J631",
+  "uuid": "b8509d0fc36637169a03efa00b40318a",
+  "version": "14.6.1",
+  "build": "23G93",
   "encodeContexts": {
     "__ZN14Vcn2EncCommand15getFeedbackSizeEv": [
       "__ZN14Vcn2EncCommand20addSessionInitPacketEv",
